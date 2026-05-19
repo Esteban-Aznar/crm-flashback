@@ -1,0 +1,70 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg: #0a0a0a;
+  --color-surface: #111111;
+  --color-surface-2: #1a1a1a;
+  --color-border: #2a2a2a;
+  --color-border-hover: #444;
+  --color-gold: #c9a84c;
+  --color-gold-light: #e2c078;
+  --color-gold-dark: #a08030;
+  --color-text: #f0f0f0;
+  --color-text-muted: #888;
+  --color-text-faint: #555;
+  --color-error: #e05252;
+  --color-success: #4cae74;
+  --font-brand: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --radius: 8px;
+  --radius-lg: 14px;
+  --transition: 0.2s ease;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--color-gold);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-gold-light);
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+
+input {
+  font-family: var(--font-body);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-hover);
+  border-radius: 3px;
+}
